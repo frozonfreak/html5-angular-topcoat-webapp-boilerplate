@@ -16,7 +16,7 @@ webApp.config(function($stateProvider, $urlRouterProvider) {
       controller: 'appController1',
     })
     // For any unmatched url, redirect to /state1
-     $urlRouterProvider.otherwise("/404");
+     $urlRouterProvider.otherwise("/");
 
 });
 //controller
