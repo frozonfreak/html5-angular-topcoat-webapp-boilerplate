@@ -21,35 +21,18 @@ webApp.config(function($stateProvider, $urlRouterProvider) {
 });
 //controller
 webApp.controller('appController', function($scope, $location){
-        $scope.alerts = [];
-        $scope.searchText;
-        
           //Initializer
         init();
         function init(){
                 console.log($location.path());
                 
         };
-        $scope.isActive = function (viewLocation) { 
-        	console.log($location.path());
-        return viewLocation === $location.path();
-    };
-        
 });
 webApp.controller('appController1', function($scope, $location){
-        $scope.alerts = [];
-        $scope.searchText;
-        
           //Initializer
         init();
-        function init(){
-                console.log($location.path());
-                
+        function init(){    
         };
-        $scope.isActive = function (viewLocation) { 
-        	console.log($location.path());
-        return viewLocation === $location.path();
-    };
         
 });
 
@@ -62,9 +45,9 @@ angular.module('webApp').run(function($http, $rootScope, $location) {
                 var cl = document.body.classList;
                 if (cl.contains('left-nav')) {
                     cl.remove('left-nav');
-                } else {
+                } else 
                     cl.add('left-nav');
-                }
+                
             };
 
 //Active menu
